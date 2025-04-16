@@ -1,6 +1,6 @@
 public class DataValidator {
 
-    private static String validateName(String name) {
+    public static String validateName(String name) {
         name = name.replaceAll("\\s+", " ").trim();
         if (!name.matches("^[А-ЯЁа-яё]+ [А-ЯЁа-яё]+$")) {
             return "";
@@ -8,7 +8,7 @@ public class DataValidator {
         return name;
     }
 
-    private static String validateAge(String age) {
+    public static String validateAge(String age) {
         age = age.replaceAll("[^0-9]", "");
         try {
             int ageNum = Integer.parseInt(age);
@@ -19,7 +19,7 @@ public class DataValidator {
         return age;
     }
 
-    private static String validatePhone(String phone) {
+    public static String validatePhone(String phone) {
         String digits = phone.replaceAll("[^0-9]", "");
 
         if (digits.length() == 11 && digits.startsWith("7")) {
@@ -37,7 +37,7 @@ public class DataValidator {
         return "";
     }
 
-    private static String validateEmail(String email) {
+    public static String validateEmail(String email) {
         email = email.replaceAll("\\.{2,}", ".");
         if (!email.matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$")) {
             return "";
