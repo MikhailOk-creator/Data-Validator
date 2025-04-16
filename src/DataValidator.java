@@ -37,4 +37,12 @@ public class DataValidator {
         return "";
     }
 
+    private static String validateEmail(String email) {
+        email = email.replaceAll("\\.{2,}", ".");
+        if (!email.matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$")) {
+            return "";
+        }
+        return email;
+    }
+
 }
