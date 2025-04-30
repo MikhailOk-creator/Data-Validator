@@ -42,3 +42,5 @@ bin/
 .DS_Store
 
 input.txt
+output.txt
+test_output.txt

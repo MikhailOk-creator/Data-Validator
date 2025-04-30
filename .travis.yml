@@ -1,9 +1,15 @@
 language: java
 jdk: openjdk21
 
+# Кэширование Gradle
 cache:
   directories:
-    - $HOME/.gradle
+    - $HOME/.gradle/caches
+    - $HOME/.gradle/wrapper
+
+# Запрет запуска сборки в режиме daemon (для Travis CI)
+before_install:
+  - export GRADLE_OPTS="-Dorg.gradle.daemon=false"
 
 script:
-  - ./gradlew build
+  - ./gradlew clean build

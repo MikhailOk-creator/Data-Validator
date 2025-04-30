@@ -2,8 +2,8 @@ import java.io.*;
 
 public class Main {
     public static void main(String[] args) {
-        String inputFile = "input.txt";
-        String outputFile = "output.txt";
+        String inputFile = "test_input.txt";
+        String outputFile = "test_output.txt";
 
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFile));
              BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile))) {
