@@ -13,3 +13,4 @@ before_install:
 
 script:
   - ./gradlew clean build
+  - java -jar build/libs/DataValidator-1.0-SNAPSHOT.jar test_input.txt
