@@ -1,0 +1,9 @@
+language: java
+jdk: openjdk21
+
+cache:
+  directories:
+    - $HOME/.gradle
+
+script:
+  - ./gradlew build
