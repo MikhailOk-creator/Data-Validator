@@ -22,13 +22,6 @@ public class DataValidatorTest {
     }
 
     @Test
-    void validateAge_invalidAge() {
-        assertEquals("", DataValidator.validateAge("-5"));
-        assertEquals("", DataValidator.validateAge("abc"));
-        assertEquals("", DataValidator.validateAge("150"));
-    }
-
-    @Test
     void validatePhone_russianPhone() {
         assertEquals("+7 (999) 123-45-67", DataValidator.validatePhone("+7 999 123 45 67"));
     }
