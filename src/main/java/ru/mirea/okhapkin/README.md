@@ -1,0 +1,1 @@
+[![Coverage Status](https://coveralls.io/repos/github/MikhailOk-creator/Data-Validator/badge.svg?branch=master)](https://coveralls.io/github/MikhailOk-creator/Data-Validator?branch=master)
