@@ -1,15 +1,8 @@
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'gradle.plugin.org.kt3k.gradle.plugin:coveralls-gradle-plugin:2.12.2'
-    }
+plugins {
+    id 'java'
+    id 'jacoco'
+    id 'com.github.kt3k.coveralls' version '2.12.2'
 }
-
-apply plugin: 'java'
-apply plugin: 'jacoco'
-apply plugin: 'com.github.coveralls'
 
 group = 'ru.mirea.okhapkin'
 version = '1.0-SNAPSHOT'
